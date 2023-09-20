@@ -21,11 +21,7 @@ const EditTodo = ({ open, setOpen, id, todo }) => {
 
   return (
     <div>
-      <Dialog
-        fullScreen={fullScreen}
-        open={open}
-        onClose={() => setOpen(false)}
-      >
+      <Dialog fullWidth={true} open={open} onClose={() => setOpen(false)}>
         <DialogTitle>Edit Todo</DialogTitle>
         <DialogContent>
           <TextField
